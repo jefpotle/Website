@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>Hi</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <script src="css/github-calendar.min.js"></script>
+  <link rel="stylesheet" href="css/github-calendar.css">
+  <link rel="stylesheet" href="css/github-calendar-responsive.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
+  <link rel="stylesheet" href="css/projects.css">
+  <title>Projects | Jeffrey Yu</title>
+</head>
+
+<body>
+  <div class="box">
+    <h1 class = "pane">GITHUB</h1>
+    <div class="calendar pane">
+      Loading the data for @jefpotle.
+    </div>
+    <script>
+      // or enable responsive functionality:
+      GitHubCalendar(".calendar", "jefpotle", {
+        responsive: true
+      });
+    </script>
+    <h1 class = "pane">PROJECTS</h1>
+    <div class="projects-container">
+      <div class="row">
+        <div class="project pane">
+            <img src="static/Spoticopy.png">
+            <div class="text">
+              <h2>Spoticopy</h2>
+              <p>Spoticopy uses Spotify API to return common songs found within select personal playlists for insight on music listening trends. Check it out on Github.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="static/Spoticopy.png">
+            <div class="text">
+              <h2>Spoticopy</h2>
+              <p>Spoticopy uses Spotify API to return common songs found within select personal playlists for insight on music listening trends. Check it out on Github.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="static/Spoticopy.png">
+            <div class="text">
+              <h2>Spoticopy</h2>
+              <p>Spoticopy uses Spotify API to return common songs found within select personal playlists for insight on music listening trends. Check it out on Github.</p>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</body>
+
 </html>
