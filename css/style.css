@@ -22,6 +22,7 @@ body {
   float: left;
   width: 540px;
   height: 320px;
+
 }
 
 .pane {
@@ -55,12 +56,20 @@ a {
   font-family: Segoe UI;
   font-weight: 300;
   font-size: 17px;
+  border-bottom: 1px solid transparent;
+  transition: 1s cubic-bezier(0.4, 0, 0, 1);
+}
+
+
+ul a:hover {
+  transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  border-color: #444444;
 }
 
 a:hover {
   transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
-  text-decoration: underline;
 }
 
 #email {

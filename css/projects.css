@@ -60,10 +60,95 @@ h1 {
 
 img {
   width: 250px;
+  margin-bottom: 5%;
 }
 
 
 .project {
   width: 250px;
-  background: white;
+  background: none;
+}
+
+.text * {
+  margin: 0;
+}
+
+.text h2 {
+  font-family: Garamond;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.text {
+
+  padding: 32px;
+}
+
+.text p {
+  color: #444444;
+  opacity: 0.5;
+  text-decoration: none;
+  font-family: Segoe UI;
+  font-weight: 300;
+  font-size: 17px;
+  transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text:hover p{
+  transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+}
+
+.text a{
+  border-bottom: 1px solid transparent;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text:hover a{
+  text-decoration: none;
+  border-color: #5489ef;
+}
+
+.text a:visited{
+  color: #5489ef;
+}
+
+.text a:hover{
+  color: #5489ef;
+  border-color: #5489ef;
+}
+
+b {
+  font-weight: bolder;
+}
+
+@-webkit-keyframes borderBlink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: black
+    }
+
+}
+@keyframes borderBlink {
+    from, to {
+        border-color: #5489ef;
+    }
+    50% {
+        border-color: transparent;
+
+    }
+}
+
+.borderBlink{
+    border-bottom:1px;
+    border-color: transparent;
+}
+
+.borderBlink:hover {
+    -webkit-animation: borderBlink 2s linear infinite;
+    animation: borderBlink 2s linear infinite;
 }
